@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
-import 'splash_screen_2.dart';
 
-class SplashScreen1 extends StatelessWidget {
-  const SplashScreen1({super.key});
+class SplashScreen3 extends StatelessWidget {
+  const SplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,12 +29,12 @@ class SplashScreen1 extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Text(
-              "Welcome Selamat Datang",
+              "Welcome Selamat Datang 3x",
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
             Text(
-              "Lupa bawa dompet \nwhen ketika mau belanja?",
+              "Ayo coba sekarang",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16.0,
