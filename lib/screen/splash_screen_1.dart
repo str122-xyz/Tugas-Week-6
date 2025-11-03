@@ -12,6 +12,7 @@ class SplashScreen1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Spacer(),
             SizedBox(height: 50),
             Container(
               margin: EdgeInsets.only(bottom: 25),
@@ -76,6 +77,30 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 35),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 35),
+              child: SizedBox(
+                height: 40,
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    // TODO: panggil halaman berikutnya
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: Text(
+                    "Continue",
+                    style: TextStyle(fontSize: 16, color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
+            Spacer(),
           ],
         ),
       ),
