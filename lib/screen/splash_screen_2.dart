@@ -90,7 +90,10 @@ class SplashScreen2 extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    // TODO: panggil halaman berikutnya
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SplashScreen3()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
