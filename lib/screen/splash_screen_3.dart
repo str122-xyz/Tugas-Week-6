@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
+import 'package:flutter_splash_screen/login/login.dart';
 
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3({super.key});
@@ -22,7 +23,7 @@ class SplashScreen3 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.black,
                 image: DecorationImage(
-                  image: AssetImage("assets/logo.png"),
+                  image: AssetImage("assets/logo3.png"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -30,7 +31,11 @@ class SplashScreen3 extends StatelessWidget {
             SizedBox(height: 10),
             Text(
               "Welcome Selamat Datang 3x",
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+              ),
             ),
             SizedBox(height: 10),
             Text(
@@ -39,13 +44,33 @@ class SplashScreen3 extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.blue,
-                fontWeight: FontWeight.normal,
+                fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // Bullet non-aktif
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9),
+                  ),
+                ),
+                SizedBox(width: 10),
+                // Bullet non-aktif
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9),
+                  ),
+                ),
+                SizedBox(width: 10),
                 // Bullet aktif
                 Container(
                   width: 10,
@@ -53,26 +78,6 @@ class SplashScreen3 extends StatelessWidget {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.blue,
-                  ),
-                ),
-                SizedBox(width: 10),
-                // Bullet non-aktif
-                Container(
-                  width: 10,
-                  height: 10,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFFedede9),
-                  ),
-                ),
-                SizedBox(width: 10),
-                // Bullet non-aktif
-                Container(
-                  width: 10,
-                  height: 10,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFFedede9),
                   ),
                 ),
               ],
@@ -85,7 +90,10 @@ class SplashScreen3 extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    // TODO: panggil halaman berikutnya
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Login()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
