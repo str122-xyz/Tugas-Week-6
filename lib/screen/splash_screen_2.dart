@@ -34,7 +34,7 @@ class SplashScreen2 extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
-                color: Colors.blue,
+                color: Colors.black,
               ),
             ),
             SizedBox(height: 10),
@@ -43,7 +43,7 @@ class SplashScreen2 extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16.0,
-                color: Colors.blue,
+                color: Colors.black,
                 fontWeight: FontWeight.normal,
               ),
             ),
@@ -51,16 +51,6 @@ class SplashScreen2 extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Bullet aktif
-                Container(
-                  width: 10,
-                  height: 10,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.blue,
-                  ),
-                ),
-                SizedBox(width: 10),
                 // Bullet non-aktif
                 Container(
                   width: 10,
@@ -68,6 +58,16 @@ class SplashScreen2 extends StatelessWidget {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: Color(0xFFedede9),
+                  ),
+                ),
+                SizedBox(width: 10),
+                // Bullet aktif
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.blue,
                   ),
                 ),
                 SizedBox(width: 10),
