@@ -19,12 +19,17 @@ class SplashScreen1 extends StatelessWidget {
               height: 250,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.indigo,
+                color: Colors.black,
                 image: DecorationImage(
                   image: AssetImage("assets/logo.png"),
                   fit: BoxFit.cover,
                 ),
               ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              'Welcome Selamat Datang',
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
           ],
         ),
